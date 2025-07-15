@@ -1,0 +1,29 @@
+from tkinter import *
+
+window = Tk() # crée une fenêtre
+
+window.title("Stratégies de gestion de flux à l’entrée d’un un réseau de communication")
+
+window.geometry("600x600")
+window.minsize(480, 360)
+window.maxsize(1920, 1080)
+
+window.iconbitmap('./anya.ico') # logo
+window.config(background = '#BDFCC9') # fond de la fenêtre
+frame = Frame(window, bg = '#BDFCC9')
+
+label_title = Label(frame, text = "Buffer :", font = ('Arial', 15), bg = '#BDFCC9', fg = 'black') 
+label_title.pack() 
+
+listbox_buffer = Listbox(frame, width=50, height=10)
+listbox_buffer.pack()
+
+button_arrive = Button(frame, text = "Arrivée d'un paquet", font = ('Courrier', 10), bg = '#B0E0E6', fg = 'black', command =)
+button_arrive.pack()
+
+button_transmission = Button(frame, text = "Transmissiond'un paquet", font = ('Courrier', 10), bg = '#B0E0E6', fg = 'black', command =)
+button_transmission.pack()
+
+frame.pack(expand = YES)
+
+window.mainloop() 
